@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: p2p-chat-backend
+    env: node
+    plan: free # or your desired plan
+    buildCommand: "npm install"
+    startCommand: "npm start"
+    envVars:
+      - key: NODE_VERSION
+        value: 18 # Or your preferred Node.js version
